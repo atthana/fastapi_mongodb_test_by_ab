@@ -6,7 +6,7 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - mongo_data:/data/db
+      - ./_docker_volumes/mongo_db:/data/db
     environment:
       MONGO_INITDB_DATABASE: ecommerce_db
 

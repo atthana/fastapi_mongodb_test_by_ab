@@ -4,6 +4,8 @@
 up:
 	docker compose up -d
 	source venv/bin/activate
+
+up-fast:
 	cd order_service && python -m uvicorn app.main:app --reload
 
 # ปิด MongoDB
